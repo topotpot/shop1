@@ -1,0 +1,112 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+body.modal-open {
+    overflow-y: auto !important;
+    padding-right: 0 !important;
+}
+
+.main-block {
+    background-color: #211C24;
+}
+
+.main-img {
+    width: 70%;
+}
+
+.see-of {
+    width: 80%;
+}
+
+.Overwatch {
+    width: 95%;
+}
+
+.valorant {
+    background-color: #EDEDED;
+}
+
+.val-img {
+    height: 120%;
+    margin: 0;
+}
+
+.block-category {
+    background-color: #FAFAFA;
+}
+
+.filter-item:hover {
+    text-decoration: underline;
+}
+
+.card-img-custom {
+    height: 160px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.product-card {
+    min-height: 382px;
+    min-width: 268px;
+}
+
+.product-card::before {
+    content: url(/img/heart.svg);
+    align-self: flex-end;
+    margin-right: 15px;
+}
+
+.product-card:hover::before {
+    content: url(/img/heart-fill.svg);
+    filter: brightness(0) saturate(100%) invert(17%) sepia(85%) saturate(7476%) hue-rotate(356deg) brightness(91%) contrast(102%);
+}
+
+.card {
+    border: none;
+    background-color: #EDEDED;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.0);
+}
+
+.card:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.18);
+    transform: translateY(-3px);
+}
+
+.footer {
+    background: #000000;
+}
+
+.footer h5 {
+    color: #ffffff;
+}
+
+.footer p,
+.footer a {
+    color: #CFCFCF;
+}
+
+.main-block {
+    background-color: #ffffff;
+}
+
+@media(min-width:992px) {
+    .order-block{
+        border-left: 1px solid #EBEBEB;
+    }
+}
