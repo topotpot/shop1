@@ -103,120 +103,60 @@
     <main>
         <div class="container-fluid ">
             <div class="container my-5">
-                <div class="row pt-5">
-                    <div class="col-12 col-md-6">
-                        <h5 class="text-dark">Shopping cart</h5>
-
-                        <div class="row">
-                            <div class="col-4">
-                                <!-- title from cookie -->
-                            </div>
-                            <div class="col-4">
-                                <!-- count from cookie with -->
-                                <input data-item="add title name from cookie" class="form-control quantity-input"
-                                    type="number" name="quantity" min="1" value="add value from cookie">
-                            </div>
-                            <div class="col-4">
-                                <!-- total price for 1 product like price * amount -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 order-block">
-                        <h5 class="text-dark">Order Summary</h5>
+                <div class="row pt-5 d-flex justify-content-center">
+                    <div class="col-12 col-lg-6 sign_block">
+                        <h1 class="text-center">Sign in</h1>
+                        <button
+                            class="btn btn-outline-dark col-12 m-2 p-2 d-flex justify-content-center align-items-center"
+                            type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                fill="currentColor" class="bi bi-google me-2" viewBox="0 0 16 16">
+                                <path
+                                    d="M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08z" />
+                            </svg>Continue with Google</button>
+                        <button
+                            class="btn btn-outline-dark col-12 m-2 p-2 d-flex justify-content-center align-items-center"
+                            type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                fill="currentColor" class="bi bi-facebook me-2" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                            </svg>Continue with Facebook</button>
+                        <h5 class="text-center">or</h5>
                         <form class="order-form" action="" method="post">
                             <div class="form-group mt-3">
-                                <label for="firstName">Name:</label>
+                                <label for="firstName">Email:</label>
                                 <input class="form-control" type="text" id="firstName" name="firstName" required>
                             </div>
                             <div class="form-group mt-3">
-                                <label for="firstSurname">Surname:</label>
+                                <label for="firstSurname">Password:</label>
                                 <input class="form-control" type="text" id="firstName" name="firstName" required>
                             </div>
-                            <div class="form-group mt-3">
-                                <label for="phone">Phone:</label>
-                                <input class="form-control" type="tel" id="firstName" name="firstName" required>
-                            </div>
-                            <div class="form-group mt-3">
-                                <label for="Address">Address:</label>
-                                <input class="form-control" type="text" id="firstName" name="firstName" required>
-                            </div>
-                            <div class="total_money_amount d-flex justify-content-between align-items-center mt-4">
-                                <h5>Total:</h5>
-                                <h5>0$</h5>
-                            </div>
-                            <p class="text-black-50 mt-2">The amount shown is exclusive of taxes.</p>
-                            <button type="button" class="btn btn-dark p-2 col-12">Checkout</button>
+                            <p class="text-black-50 mt-2">By clicking the "Sign in" button, you agree to the site's
+                                terms and conditions.</p>
+                            <button type="button" class="btn btn-dark p-2 col-12">Sign in</button>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
     </main>
-    <footer>
-        <div class="container-fluid footer">
-            <div class="container py-5 ">
+    <footer class="container">
+        <div class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <p class="col-md-4 mb-0 text-body-secondary">© 2024 Company, Inc</p>
 
+            <a href="/"
+                class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                <svg class="bi me-2" width="40" height="32">
+                    <use xlink:href="#bootstrap"></use>
+                </svg>
+            </a>
 
-                <div class="row">
-                    <div class="col-6 col-md-2 mb-3">
-                        <h5>Section</h5>
-                        <ul class="nav flex-column">
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Home</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Features</a>
-                            </li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Pricing</a>
-                            </li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">FAQs</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">About</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="col-6 col-md-2 mb-3">
-                        <h5>Section</h5>
-                        <ul class="nav flex-column">
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Home</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Features</a>
-                            </li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Pricing</a>
-                            </li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">FAQs</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">About</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="col-6 col-md-2 mb-3">
-                        <h5>Section</h5>
-                        <ul class="nav flex-column">
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Home</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Features</a>
-                            </li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Pricing</a>
-                            </li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">FAQs</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">About</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="col-md-5 offset-md-1 mb-3">
-                        <form>
-                            <h5>Subscribe to our newsletter</h5>
-                            <p>Monthly digest of what's new and exciting from us.</p>
-                            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                                <label for="newsletter1" class="visually-hidden">Email address</label>
-                                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-                                <button class="btn btn-primary" type="button">Subscribe</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-
-                <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-                    <p>© 2024 Company, Inc. All rights reserved.</p>
-                </div>
-            </div>
+            <ul class="nav col-md-4 justify-content-end">
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+            </ul>
         </div>
     </footer>
     <script src="js/cart_page.js"></script>

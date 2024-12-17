@@ -57,8 +57,7 @@ body.modal-open {
 }
 
 .product-card {
-    min-height: 382px;
-    min-width: 268px;
+
 }
 
 .product-card::before {
@@ -102,11 +101,22 @@ body.modal-open {
 }
 
 .main-block {
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
 }
 
 @media(min-width:992px) {
     .order-block{
         border-left: 1px solid #EBEBEB;
     }
+}
+.category-cart{
+    min-width: 160px;
+    min-height: 128px;
+    cursor: pointer;
+}
+header .nav-link{
+    border-bottom:none;
+}
+header .nav-link:hover{
+    border-bottom: 1px solid black;
 }
